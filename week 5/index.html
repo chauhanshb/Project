@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Devendra - Coding Club</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #172554;
+            --background-color: #f1f5f9;
+            --card-color: #ffffff;
+            --text-color: #333333;
+            --button-color: #16a34a;
+
+            --spacing-small: 10px;
+            --spacing-medium: 20px;
+            --spacing-large: 40px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        /* 5.2 Element Selector */
+        h1 {
+            font-size: 36px;
+            color: white;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            margin-bottom: var(--spacing-small);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: var(--spacing-large);
+        }
+
+        header p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        #hero {
+            background-color: #dbeafe;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        #hero h2 {
+            font-size: 30px;
+            color: var(--primary-color);
+        }
+
+        #hero p {
+            font-size: 17px;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: var(--spacing-large) 20px;
+        }
+
+        .card {
+            background-color: var(--card-color);
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .card p {
+            font-size: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #eff6ff;
+        }
+
+
+        input,
+        select {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-family: inherit;
+        }
+
+        .submit-btn {
+            background-color: var(--button-color);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #15803d;
+        }
+
+
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 26px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            table {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <h1>Welcome to Coding Club</h1>
+        <p>Learn Coding | Build Projects | Create Future</p>
+        <p>Created by Devendra Pratap Singh</p>
+        <p>B.Tech Computer Science Engineering Student</p>
+    </header>
+
+
+    <nav>
+        <a href="">Home</a>
+        <a href=" ">About</a>
+        <a href=" ">Events</a>
+        <a href=" ">Register</a>
+    </nav>
+
+    <section id="hero">
+        <h2>Welcome to Our Coding Community!</h2>
+        <p>
+            Join our Coding Club and improve your programming skills.
+            Learn HTML, CSS, Java, Python and more.
+        </p>
+    </section>
+
+    <main class="container">
+
+        <section class="card" id="about">
+            <h2>About Coding Club</h2>
+
+            <p>
+                Our Coding Club is a place where students learn programming,
+                develop websites, solve coding problems and work on
+                innovative projects.
+
+                Our aim is to improve technical skills and prepare
+                students for the future.
+            </p>
+        </section>
+
+        <section class="card" id="events">
+            <h2>Upcoming Events</h2>
+
+            <table>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                </tr>
+
+                <tr>
+                    <td>HTML Workshop</td>
+                    <td>10 November 2026</td>
+                    <td>10:00 AM</td>
+                </tr>
+
+                <tr>
+                    <td>CSS Competition</td>
+                    <td>15 November 2026</td>
+                    <td>11:00 AM</td>
+                </tr>
+
+                <tr>
+                    <td>Java Programming</td>
+                    <td>20 November 2026</td>
+                    <td>12:00 PM</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="card" id="register">
+            <h2>Student Registration Form</h2>
+
+            <form>
+                <label>Full Name:</label>
+                <input type="text" placeholder="Enter your name" required>
+
+                <label>Email:</label>
+                <input type="email" placeholder="Enter your email" required>
+
+                <label>Password:</label>
+                <input type="password" placeholder="Enter password" required>
+
+                <label>Select Course:</label>
+                <select required>
+                    <option value="">Choose Course</option>
+                    <option>B.Tech CSE</option>
+                    <option>B.Tech IT</option>
+                    <option>BCA</option>
+                </select>
+
+                <button type="submit" class="submit-btn">
+                    Register Now
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created by Devendra Pratap Singh</p>
+        <p>B.Tech CSE | Coding Club 2026</p>
+        <p>Keep Learning | Keep Coding</p>
+    </footer>
+
+</body>
+
+</html>

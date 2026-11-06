@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Devendra Pratap Singh - Profile</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f7;
+            padding-bottom: 80px;
+        }
+
+        .top-bar {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .top-bar h1 {
+            font-size: 25px;
+        }
+
+        .profile-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 35px;
+            padding: 50px 20px;
+        }
+
+        .profile-card {
+            width: 320px;
+            background-color: white;
+            border: 2px solid #2563eb;
+            border-radius: 20px;
+            padding: 25px;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .purple {
+            background-color: #faf5ff;
+            border-color: #9333ea;
+        }
+
+
+        .profile-image {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #2563eb;
+            margin-bottom: 15px;
+        }
+
+        .purple .profile-image {
+            border-color: #9333ea;
+        }
+
+        .profile-card h2 {
+            color: #172554;
+            margin-bottom: 10px;
+        }
+
+        .role {
+            color: #64748b;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .bio {
+            height: 120px;
+            overflow: auto;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+            padding: 12px;
+            margin: 15px 0;
+            background-color: #f8fafc;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        .profile-btn {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 11px 25px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .purple .profile-btn {
+            background-color: #9333ea;
+        }
+
+        .floating-btn {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            border: none;
+            background-color: #16a34a;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+            z-index: 200;
+        }
+
+        @media (max-width: 650px) {
+            .profile-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-card {
+                width: 90%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header class="top-bar">
+        <h1>My Personal Profile</h1>
+        <p>Welcome to My Profile Page</p>
+    </header>
+
+    <main class="profile-container">
+
+
+        <section class="profile-card">
+
+            <img src="myphoto.jpeg" alt="Profile Photo" class="profile-image">
+
+            <h2>Devendra Pratap Singh</h2>
+
+            <p class="role">B.Tech CSE Student</p>
+
+            <div class="bio">
+                Hello! My name is Devendra Pratap Singh.
+
+                I am a B.Tech Computer Science Engineering student.
+
+                I am interested in programming, web development,
+                HTML, CSS, Java, Python and new technologies.
+
+                My goal is to become a successful software developer.
+
+                I enjoy learning new skills, solving coding problems
+                and creating innovative projects.
+            </div>
+
+            <button class="profile-btn">My Profile</button>
+
+        </section>
+
+
+
+        <section class="profile-card purple">
+
+            <img src="photo.jpeg " alt="Student Profile Photo" class="profile-image">
+
+            <h2>Devendra Pratap Singh</h2>
+
+            <p class="role">Future Software Developer</p>
+
+            <div class="bio">
+                I am passionate about technology and coding.
+
+                Currently, I am studying Computer Science Engineering.
+
+                I am learning HTML, CSS, Java and Python.
+
+                I want to improve my programming knowledge
+                and develop real-world software projects.
+
+                My dream is to become a professional software engineer.
+            </div>
+
+            <button class="profile-btn">About Me</button>
+
+        </section>
+
+    </main>
+
+    <button class="floating-btn" aria-label="Add profile">+</button>
+
+</body>
+
+</html>

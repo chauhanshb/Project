@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #1e293b;
+    color: white;
+
+    padding: 20px 50px;
+}
+
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+.nav-btn {
+    background-color: #0ea5e9;
+    color: white;
+
+    border: none;
+    padding: 10px 20px;
+
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.banner {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    min-height: 400px;
+
+    background-color: #2563eb;
+    color: white;
+
+    padding: 30px;
+}
+
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.banner h1 {
+    font-size: 45px;
+}
+
+
+.banner p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+.banner-btn {
+    background-color: white;
+    color: #2563eb;
+
+    border: none;
+    padding: 12px 25px;
+
+    border-radius: 5px;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+.cards-section {
+    padding: 50px;
+}
+
+
+.cards-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+
+.cards-container {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+
+.card {
+    flex: 1 1 200px;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #2563eb;
+}
+
+
+.card p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+.card button {
+    background-color: #2563eb;
+    color: white;
+
+    border: none;
+    padding: 10px 20px;
+
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #1e293b;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .banner h1 {
+        font-size: 35px;
+    }
+
+    .cards-section {
+        padding: 30px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banner h1 {
+        font-size: 28px;
+    }
+
+    .banner p {
+        font-size: 16px;
+    }
+
+    .cards-section {
+        padding: 20px;
+    }
+
+}
